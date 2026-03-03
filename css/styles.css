@@ -1,0 +1,166 @@
+body {
+margin:0;
+font-family:Segoe UI;
+background:#0b0f17;
+color:white;
+}
+
+.layout {
+display:flex;
+min-height:100vh;
+}
+
+.sidebar {
+width:230px;
+background:#111827;
+padding:30px 20px;
+}
+
+.logo h2 {
+color:#10b981;
+margin:0;
+}
+
+.online-dot {
+height:8px;
+width:8px;
+background:#10b981;
+border-radius:50%;
+display:inline-block;
+margin-right:5px;
+}
+
+.sidebar ul {
+list-style:none;
+padding:0;
+margin-top:40px;
+}
+
+.sidebar li {
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+cursor:pointer;
+color:#9ca3af;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+background:#10b981;
+color:black;
+}
+
+.main {
+flex:1;
+padding:40px;
+}
+
+.subtitle {
+color:#9ca3af;
+}
+
+.cards {
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.card {
+background:linear-gradient(145deg,#1f2937,#111827);
+padding:25px;
+border-radius:20px;
+}
+
+.form-card {
+background:linear-gradient(145deg,#1f2937,#111827);
+padding:40px;
+border-radius:20px;
+max-width:900px;
+}
+
+.form-grid {
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+input {
+padding:14px;
+border-radius:12px;
+border:none;
+background:#0b0f17;
+color:white;
+}
+
+.primary-btn {
+background:#10b981;
+color:black;
+padding:14px;
+border:none;
+border-radius:12px;
+margin-top:20px;
+cursor:pointer;
+}
+
+.empty-box {
+margin-top:30px;
+background:#1f2937;
+padding:80px;
+border-radius:20px;
+text-align:center;
+color:#6b7280;
+}
+
+.row {
+display:flex;
+gap:15px;
+}
+
+.table-header {
+display:flex;
+justify-content:space-between;
+background:#1f2937;
+padding:20px;
+border-radius:20px;
+margin-top:30px;
+color:#9ca3af;
+}
+
+.chat-card {
+background:linear-gradient(145deg,#1f2937,#111827);
+padding:40px;
+border-radius:20px;
+max-width:900px;
+}
+
+.chat-box {
+margin-top:20px;
+background:#111827;
+padding:40px;
+border-radius:20px;
+min-height:200px;
+}
+
+.bot-message {
+color:#9ca3af;
+}
+
+.chat-input {
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.chat-input input {
+flex:1;
+}
+
+.page {
+display:none;
+}
+
+.active-page {
+display:block;
+}

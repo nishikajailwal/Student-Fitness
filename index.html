@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitStudent</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="logo">
+        <h2>FitStudent</h2>
+        <span class="online-dot"></span> ONLINE
+    </div>
+
+    <ul>
+        <li class="active" onclick="showPage('dashboard')">Dashboard</li>
+        <li onclick="showPage('profile')">My Profile</li>
+        <li onclick="showPage('plans')">AI Plans</li>
+        <li onclick="showPage('progress')">Progress</li>
+        <li onclick="showPage('coach')">AI Coach</li>
+        <li class="logout">Logout</li>
+    </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="page active-page">
+
+    <!-- LOGIN SECTION -->
+    <div class="form-card" style="margin-bottom:20px;">
+        <h2>Login</h2>
+        <div class="row">
+            <input id="emailInput" placeholder="Email">
+            <input id="passwordInput" type="password" placeholder="Password">
+            <button id="loginBtn" class="primary-btn">Login</button>
+        </div>
+    </div>
+
+    <h1>Welcome back, !</h1>
+    <p class="subtitle">Here's your fitness overview for today.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h4>BMI SCORE</h4>
+            <h2>0.0</h2>
+            <span>Underweight</span>
+        </div>
+
+        <div class="card">
+            <h4>DAILY CALORIES</h4>
+            <h2>0</h2>
+            <span>Target Intake</span>
+        </div>
+
+        <div class="card">
+            <h4>DAILY PROTEIN</h4>
+            <h2>0g</h2>
+            <span>Muscle Support</span>
+        </div>
+
+        <div class="card">
+            <h4>BUDGET LEVEL</h4>
+            <h2>N/A</h2>
+            <span>Student Optimized</span>
+        </div>
+    </div>
+</div>
+
+<!-- PROFILE -->
+<div id="profile" class="page">
+    <div class="form-card">
+        <h2>Complete Your Profile</h2>
+
+        <div class="form-grid">
+            <input id="ageInput" placeholder="Age">
+            <input id="genderInput" placeholder="Gender">
+            <input id="heightInput" placeholder="Height (cm)">
+            <input id="weightInput" placeholder="Weight (kg)">
+            <input id="goalInput" placeholder="Goal">
+            <input id="budgetInput" placeholder="Budget">
+            <input id="dietInput" placeholder="Diet Preference">
+            <input id="locationInput" placeholder="Workout Location">
+            <input id="experienceInput" placeholder="Experience">
+        </div>
+
+        <button id="saveProfileBtn" class="primary-btn">Save Profile</button>
+    </div>
+</div>
+
+<!-- PLANS -->
+<div id="plans" class="page">
+    <h2>Your Plans</h2>
+    <div class="empty-box">
+        Select a plan to view details
+    </div>
+</div>
+
+<!-- PROGRESS -->
+<div id="progress" class="page">
+    <div class="form-card">
+        <h2>Log Today's Weight</h2>
+        <div class="row">
+            <input id="progressWeightInput" placeholder="Weight (kg)">
+            <button id="logWeightBtn" class="primary-btn">Log Weight</button>
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="table-header">
+            <span>Date</span>
+            <span>Weight</span>
+            <span>Change</span>
+        </div>
+    </div>
+</div>
+
+<!-- COACH -->
+<div id="coach" class="page">
+    <div class="chat-card">
+        <h2>AI Fitness Coach</h2>
+        <p class="subtitle">Ask me anything about your workout or diet</p>
+
+        <div class="chat-box">
+            <div class="bot-message">
+                Hi! I'm your AI Coach. Need help with exercise form, meal prep, or staying motivated?
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input id="chatInput" placeholder="Type your question...">
+            <button id="sendChatBtn">➤</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/integration.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
